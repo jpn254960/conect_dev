@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+@keyframes not{
+    0%{
+        top: -15vh
+    }
+    25%{
+        top: 0px;
+    }
+    75%{
+        top:0px;
+    }
+    100%{
+        top: -15vh;
+    }
+}
+section{
+    user-select: none;
+}
+@media(max-width:600px){
+    body{
+        display: flex;
+        flex-direction: column;
+
+        overflow-x: hidden;
+        overflow-y: hidden;
+        text-align:center;
+        border: none;
+        margin: 0px;
+        background-color: #252327;
+        justify-content: center;
+        /* justify-items: center; Removido, pois é para Grid, não Flexbox */
+        align-items: center; /* Adicionado para centralizar itens em Flexbox */
+        min-height: 100vh; 
+    }
+    *{
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+    }
+    #painel{
+        overflow: hidden;
+        width: 80vw;
+        height: 100vw;   /* 70vh * 2 = 140, -> 140vw */
+        background-color: #222520;
+        left: 8vw ;
+        border-radius: 6vw; /* 3vh * 2 = 6, -> 6vw */
+        /* margin: auto; - Ineficaz com position: absolute */
+        box-shadow: 0px 0px 5vw #6313c3;
+        color: white;
+        padding-left: 3vw;
+    }
+    .input{
+        padding-left: 2vw;
+        color: white;
+        box-sizing: border-box;
+        width: 60vw;
+        height: 12vw;    /* 6vh * 2 = 12, -> 12vw */
+        border-radius: 4vw; /* 2vh * 2 = 4, -> 4vw */
+        border: none;
+        font-size: 3vw; /* Já era vw, mantido */
+        background-color: #171916;
+    }
+    .tn{
+        font-size: 3vw; /* Já era vw, mantido */
+        color: white;
+        width: 80vw;
+        text-align: left;
+        margin-left: 12vw;
+        font-weight: bold;
+    }
+    #logo_cima{
+        width: 30vw; /* Já era vw, mantido */
+    }
+    #logins{
+        width: 80vw; /* Já era vw, mantido */
+    }
+    #t1{
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 10vw; /* Já era vw, mantido */
+    }
+    #bt_entrar{
+        margin: auto;
+        margin-top: 8vw;
+
+        width: 30vw; /* Já era vw, mantido */
+        height: 12vw;
+        border-radius: 2vw; /* 8vh * 2 = 16, -> 16vw */
+        background-color: #bb60fa;
+        line-height: 12vw; /* Ajustado para a nova altura em vw */
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    #alert{
+        width: 100vw;
+        height: 10vh;
+        background-color: rgb(162, 53, 234);
+        position: fixed;
+        top: -15vh;
+        z-index: 300;
+        color: white;
+        box-shadow: 0px 0px 0.3vw black;
+        text-align: center;
+        animation: not 4s;
+    }
+    #mgs_alert{
+        text-transform:capitalize;
+        height: 10vh;
+        line-height: 5vh;
+        font-size: 4vw;
+    }
+    #area_inicio{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 100;
+        background-color: #291c39;
+    }
+    #inicio{
+        height: 100vh;
+        width: 100vw;
+        background-color: #171916;
+    }
+    #imgs_do_codigo{
+        border: 10vw;
+        width: 95vw;
+        margin-bottom: 2vh;
+        border-radius: 2vw;
+        object-fit: cover;
+        border: 0.3vw rgb(118, 117, 117) solid;
+    }
+    #painel_cima{
+        background-color: #222520;
+        width: 100vw;
+        height: 16vw;
+        overflow: hidden;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+    }
+    #posts{
+        width: 100vw;
+        height:184vw;
+        position: absolute;
+        top: 16vw;
+        left: 0vw;
+    }
+    #public{
+        background-color: #171916;
+        border-top: 0.2vw rgb(78, 78, 78) solid;
+        color: white;
+        width: 100vw;
+        text-align: left;
+        display: flex;
+        padding-left: 2vw;
+        box-sizing: border-box;
+        flex-direction: column; 
+    }
+    #user-name{
+        color: #6313c3;
+        font-size: 6vw;
+        font-weight: bold;
+    }
+    #legenda{
+        font-weight: 400;
+
+        margin-top: 0px;
+        font-size: 4vw;
+        width: 80vw;
+        text-align: left;
+    }
+    #painel_interações{
+        width: 100%;
+        height: 20vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 6vw;
+    }
+    .itr{
+        margin: auto;
+    }
+    
+    #notf_pn{
+        width: 100vw;
+        background-color: #151515;
+    }
+    #coment{
+        width: 100%;
+        font-size:6vw;
+        text-align: left;
+    }
+    #name-coment{
+        font-size: 7vw;
+        margin-bottom:0px ;
+        margin-top: 2vh;
+    }
+}
