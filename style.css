@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+@keyframes not{
+    0%{
+        top: -15vh
+    }
+    25%{
+        top: 0px;
+    }
+    75%{
+        top:0px;
+    }
+    100%{
+        top: -15vh;
+    }
+}
+
+body {
+    background-color: #15202B;
+    color: white;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    user-select: none;
+}
+
+#area_inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #192734;
+}
+
+#painel {
+    background-color: #22303C;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 80vw;
+}
+
+#logo_cima {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #192734;
+    color: white;
+    font-size: 16px;
+}
+
+.tn {
+    text-align: left;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+#bt_entrar {
+    background-color: #1DA1F2;
+    color: white;
+    padding: 12px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-transform: uppercase;
+}
+
+#bt_entrar:hover {
+    background-color: #1991DA;
+}
+
+#inicio {
+    margin-top: 70px; /* Para não colar no topo */
+}
+
+#painel_cima {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 60px;
+    background-color: #22303C;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+#logo_desing {
+    height: 40px;
+}
+
+#posts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+#public {
+    background-color: #192734;
+    border: 1px solid #38444D;
+    border-radius: 12px;
+    padding: 16px;
+    margin: 0 8px;
+}
+
+#user-name {
+    color: #1DA1F2;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+#legenda {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+#imgs_do_codigo {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+#painel_interações {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #38444D;
+    padding-top: 8px;
+    font-size: 16px;
+}
+
+.itr {
+    cursor: pointer;
+    color: #8899A6;
+    transition: color 0.3s;
+}
+
+.itr:hover {
+    color: #1DA1F2;
+}
+
+#comentarios {
+    background-color: #1DA1F2;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+#comentarios:hover {
+    background-color: #1991DA;
+}
+
+#alert {
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(162, 53, 234);
+    position: fixed;
+    top: -15vh;
+    z-index: 300;
+    color: white;
+    text-align: center;
+    animation: not 4s;
+}
+
+#mgs_alert {
+    text-transform: capitalize;
+    height: 10vh;
+    line-height: 5vh;
+    font-size: 16px;
+}
+
+#notf_pn {
+    margin-top: 12px;
+    padding: 8px;
+    background-color: #15202B;
+    border-radius: 8px;
+}
+
+/* Responsividade para Mobile */
+@media (max-width: 600px) {
+    #painel {
+        width: 90vw;
+        padding: 16px;
+    }
+    .input {
+        font-size: 14px;
+    }
+    #bt_entrar {
+        font-size: 14px;
+    }
+    #user-name {
+        font-size: 16px;
+    }
+    #legenda {
+        font-size: 14px;
+    }
+    .itr {
+        font-size: 14px;
+    }
+    .user-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+    flex-wrap: wrap;
+}
+
+.display-name {
+    color: #6313c3;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+}
+
+.user-handle {
+    color: #888888; 
+    font-size: 14px;
+}
+
+.post-date {
+    color: #888888;
+    font-size: 14px;
+}
+#curtirda {
+    color: #bbbbbb; 
+    cursor: pointer;
+    transition: color 0.3s, transform 0.2s;
+}
+
+#curtirda:hover {
+    color: #6313c3; 
+    transform: scale(1.05);
+}
+
+
+}
