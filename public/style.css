@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 @keyframes not{
     0%{
@@ -14,195 +14,248 @@
         top: -15vh;
     }
 }
-section{
+
+body {
+    background-color: #15202B;
+    color: white;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
     user-select: none;
 }
-@media(max-width:600px){
-    body{
-        display: flex;
-        flex-direction: column;
 
-        overflow-x: hidden;
-        overflow-y: hidden;
-        text-align:center;
-        border: none;
-        margin: 0px;
-        background-color: #252327;
-        justify-content: center;
-        /* justify-items: center; Removido, pois é para Grid, não Flexbox */
-        align-items: center; /* Adicionado para centralizar itens em Flexbox */
-        min-height: 100vh; 
-    }
-    *{
-        font-family: "Inter", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: normal;
-        font-style: normal;
-    }
-    #painel{
-        overflow: hidden;
-        width: 80vw;
-        height: 100vw;   /* 70vh * 2 = 140, -> 140vw */
-        background-color: #222520;
-        left: 8vw ;
-        border-radius: 6vw; /* 3vh * 2 = 6, -> 6vw */
-        /* margin: auto; - Ineficaz com position: absolute */
-        box-shadow: 0px 0px 5vw #6313c3;
-        color: white;
-        padding-left: 3vw;
-    }
-    .input{
-        padding-left: 2vw;
-        color: white;
-        box-sizing: border-box;
-        width: 60vw;
-        height: 12vw;    /* 6vh * 2 = 12, -> 12vw */
-        border-radius: 4vw; /* 2vh * 2 = 4, -> 4vw */
-        border: none;
-        font-size: 3vw; /* Já era vw, mantido */
-        background-color: #171916;
-    }
-    .tn{
-        font-size: 3vw; /* Já era vw, mantido */
-        color: white;
-        width: 80vw;
-        text-align: left;
-        margin-left: 12vw;
-        font-weight: bold;
-    }
-    #logo_cima{
-        width: 30vw; /* Já era vw, mantido */
-    }
-    #logins{
-        width: 80vw; /* Já era vw, mantido */
-    }
-    #t1{
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 10vw; /* Já era vw, mantido */
-    }
-    #bt_entrar{
-        margin: auto;
-        margin-top: 8vw;
+#area_inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #192734;
+}
 
-        width: 30vw; /* Já era vw, mantido */
-        height: 12vw;
-        border-radius: 2vw; /* 8vh * 2 = 16, -> 16vw */
-        background-color: #bb60fa;
-        line-height: 12vw; /* Ajustado para a nova altura em vw */
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
-    #alert{
-        width: 100vw;
-        height: 10vh;
-        background-color: rgb(162, 53, 234);
-        position: fixed;
-        top: -15vh;
-        z-index: 300;
-        color: white;
-        box-shadow: 0px 0px 0.3vw black;
-        text-align: center;
-        animation: not 4s;
-    }
-    #mgs_alert{
-        text-transform:capitalize;
-        height: 10vh;
-        line-height: 5vh;
-        font-size: 4vw;
-    }
-    #area_inicio{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 100vh;
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        z-index: 100;
-        background-color: #291c39;
-    }
-    #inicio{
-        height: 100vh;
-        width: 100vw;
-        background-color: #171916;
-    }
-    #imgs_do_codigo{
-        border: 10vw;
-        width: 95vw;
-        margin-bottom: 2vh;
-        border-radius: 2vw;
-        object-fit: cover;
-        border: 0.3vw rgb(118, 117, 117) solid;
-    }
-    #painel_cima{
-        background-color: #222520;
-        width: 100vw;
-        height: 16vw;
-        overflow: hidden;
-        position: fixed;
-        top: 0px;
-        left: 0px;
-    }
-    #posts{
-        width: 100vw;
-        height:184vw;
-        position: absolute;
-        top: 16vw;
-        left: 0vw;
-    }
-    #public{
-        background-color: #171916;
-        border-top: 0.2vw rgb(78, 78, 78) solid;
-        color: white;
-        width: 100vw;
-        text-align: left;
-        display: flex;
-        padding-left: 2vw;
-        box-sizing: border-box;
-        flex-direction: column; 
-    }
-    #user-name{
-        color: #6313c3;
-        font-size: 6vw;
-        font-weight: bold;
-    }
-    #legenda{
-        font-weight: 400;
+#painel {
+    background-color: #22303C;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 80vw;
+}
 
-        margin-top: 0px;
-        font-size: 4vw;
-        width: 80vw;
-        text-align: left;
+#logo_cima {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #192734;
+    color: white;
+    font-size: 16px;
+}
+
+.tn {
+    text-align: left;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+#bt_entrar {
+    background-color: #1DA1F2;
+    color: white;
+    padding: 12px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-transform: uppercase;
+}
+
+#bt_entrar:hover {
+    background-color: #1991DA;
+}
+
+#inicio {
+    margin-top: 70px; /* Para não colar no topo */
+}
+
+#painel_cima {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 60px;
+    background-color: #22303C;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+#logo_desing {
+    height: 40px;
+}
+
+#posts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+#public {
+    background-color: #192734;
+    border: 1px solid #38444D;
+    border-radius: 12px;
+    padding: 16px;
+    margin: 0 8px;
+}
+
+#user-name {
+    color: #1DA1F2;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+#legenda {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+#imgs_do_codigo {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+#painel_interações {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #38444D;
+    padding-top: 8px;
+    font-size: 16px;
+}
+
+.itr {
+    cursor: pointer;
+    color: #8899A6;
+    transition: color 0.3s;
+}
+
+.itr:hover {
+    color: #1DA1F2;
+}
+
+#comentarios {
+    background-color: #1DA1F2;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+#comentarios:hover {
+    background-color: #1991DA;
+}
+
+#alert {
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(162, 53, 234);
+    position: fixed;
+    top: -15vh;
+    z-index: 300;
+    color: white;
+    text-align: center;
+    animation: not 4s;
+}
+
+#mgs_alert {
+    text-transform: capitalize;
+    height: 10vh;
+    line-height: 5vh;
+    font-size: 16px;
+}
+
+#notf_pn {
+    margin-top: 12px;
+    padding: 8px;
+    background-color: #15202B;
+    border-radius: 8px;
+}
+
+/* Responsividade para Mobile */
+@media (max-width: 600px) {
+    #painel {
+        width: 90vw;
+        padding: 16px;
     }
-    #painel_interações{
-        width: 100%;
-        height: 20vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        font-size: 6vw;
+    .input {
+        font-size: 14px;
     }
-    .itr{
-        margin: auto;
+    #bt_entrar {
+        font-size: 14px;
     }
-    
-    #notf_pn{
-        width: 100vw;
-        background-color: #151515;
+    #user-name {
+        font-size: 16px;
     }
-    #coment{
-        width: 100%;
-        font-size:6vw;
-        text-align: left;
+    #legenda {
+        font-size: 14px;
     }
-    #name-coment{
-        font-size: 7vw;
-        margin-bottom:0px ;
-        margin-top: 2vh;
+    .itr {
+        font-size: 14px;
     }
+    .user-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+    flex-wrap: wrap;
+}
+
+.display-name {
+    color: #6313c3;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+}
+
+.user-handle {
+    color: #888888; 
+    font-size: 14px;
+}
+
+.post-date {
+    color: #888888;
+    font-size: 14px;
+}
+#curtirda {
+    color: #bbbbbb; 
+    cursor: pointer;
+    transition: color 0.3s, transform 0.2s;
+}
+
+#curtirda:hover {
+    color: #6313c3; 
+    transform: scale(1.05);
+}
+
+
 }
